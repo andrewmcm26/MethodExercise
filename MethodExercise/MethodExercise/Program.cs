@@ -28,25 +28,46 @@ namespace MethodExercise
             //Console.WriteLine(Dif(1, 2));
             //Console.WriteLine(Div(1, 2));
 
-            Console.WriteLine("Enter your first number:");
-            double x = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine("Enter your second number:");
-            double y = Convert.ToInt64(Console.ReadLine());
-            Console.WriteLine("Your answers are (Addition Subtraction, Multiplication, Division):");
+            //Console.WriteLine(Mult(3.8, 49.2));
+            //Console.WriteLine("Enter your first number:");
+            //double x = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Enter your second number:");
+            //double y = Convert.ToDouble(Console.ReadLine());
+            ////Console.WriteLine("Your answers are (Addition Subtraction, Multiplication, Division):");
 
-            Console.WriteLine(Sum(x, y));
-            Console.WriteLine(Dif(x, y));
-            Console.WriteLine(Mult(x, y));
-            Console.WriteLine(Div(x, y));
-
+            ////Console.WriteLine(Sum(x, y));
+            ////Console.WriteLine(Dif(x, y));
+            ////Console.WriteLine(Mult(x, y));
+            ////Console.WriteLine(Div(x, y));
+            //////Console.WriteLine(Sum(4, 5));
+            ////Console.WriteLine(Mult(10, 5));
+            //Console.WriteLine($"The sum of your numbers is {Sum(x, y)} ");
+            Sum(3.14, 4.8324);
         }
             //Beginning Exercise #2 creating math operators
-            public static double Sum(double x, double y)
+            public static void Sum(double x, double y)
             { 
                  
-                return x + y;
+                Console.WriteLine(x + y);
             }
 
+        public static void Sum(int x, int y)
+        {
+            Console.WriteLine(x + y);
+        }
+
+        public static void Sum(int x, int y, bool isBool)
+        {
+
+            if (isBool == true)
+                if (x + y == 1)
+                    Console.WriteLine($"{x + y} dollar");
+                else
+                    Console.WriteLine($"{x + y} dollars");
+                   
+
+
+        }
             
 
             public static double Dif(double x, double y)
